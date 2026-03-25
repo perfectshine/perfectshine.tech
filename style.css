@@ -680,8 +680,17 @@ section {
     font-size: 2.5rem;
   }
 
+  .logo {
+    font-size: 1rem;
+  }
+
+  .logo-img {
+    width: 20px;
+    height: 20px;
+  }
+
   .logo-text {
-    display: none;
+    display: inline;
   }
 
   .mobile-menu-toggle {
