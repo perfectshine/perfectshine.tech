@@ -36,14 +36,24 @@
   <header>
     <div class="container header-container">
       <a href="/" class="logo">
-        <img src="public/img/perfectshine-logo-square-glossy-bg.png" alt="Perfectshine Technologies LLP Logo" width="28" height="28" class="logo-img">
-        Perfectshine Technologies LLP
+        <picture>
+          <source media="(max-width: 768px)" srcset="public/img/perfectshine-logo-square-glossy-bg.png">
+          <img src="public/img/perfectshine-logo-square-glossy-bg.png" alt="Perfectshine Technologies LLP Logo" width="28" height="28" class="logo-img">
+        </picture>
+        <span class="logo-text">Perfectshine Technologies LLP</span>
       </a>
-      <nav>
+      
+      <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <nav class="main-nav">
         <ul>
           <li><a href="/">Home</a></li>
           <li class="dropdown">
-            <a href="#services">Services</a>
+            <a href="#services" class="dropdown-toggle">Services <span class="dropdown-arrow">▼</span></a>
             <div class="dropdown-content">
               <a href="devops.html">DevOps Engineering</a>
               <a href="software-development.html">Software Development</a>
